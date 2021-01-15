@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Functions for REKA:BIT - RGB Bit.
+ * Functions for REKA:BIT - RGB LED.
  *
  * Company: Cytron Technologies Sdn Bhd
  * Website: http://www.cytron.io
@@ -41,7 +41,7 @@ enum RgbColors {
 /**
  * Blocks for RGB LED.
  */
-//% weight=12 color=#ff8000 icon="\uf110" block="RGB Bit"
+//% weight=12 color=#ff8000 icon="\uf110" block="RGB LED"
 namespace rekabitRgbLed {
     // Colors array for each pixel.
     let colorsArray: number[] = [];
