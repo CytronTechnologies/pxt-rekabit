@@ -10,7 +10,10 @@
     "files": [
         "README.md",
         "main.blocks",
-        "main.ts"
+        "main.ts",
+        "power.ts",
+        "motor.ts",
+        "rgb.ts"
     ],
     "testFiles": [
         "test.ts"
