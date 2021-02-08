@@ -6,11 +6,7 @@
  * Email:   support@cytron.io
  *******************************************************************************/
 
- /**
- * Blocks for power supply.
- */
-//% weight=9 color=#ff8000 icon="\uf011" block="Power"
-namespace rekabitPower {
+namespace rekabit {
     /**
      * Return true if power is on.
      */

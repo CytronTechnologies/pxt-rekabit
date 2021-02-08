@@ -38,11 +38,7 @@ enum RgbColors {
 
 
 
-/**
- * Blocks for RGB LED.
- */
-//% weight=12 color=#ff8000 icon="\uf110" block="RGB LED"
-namespace rekabitRgbLed {
+namespace rekabit {
     // Colors array for each pixel.
     let colorsArray: number[] = [];
     for (let i = 0; i < RGB_LED_LENGTH; i++) {
@@ -61,11 +57,12 @@ namespace rekabitRgbLed {
     /**
      * Turn off all RGB pixels.
      */
-    //% weight=20
+    //% group="RGB LED"
+    //% weight=16
     //% blockGap=8
-    //% blockId="rekabit_clear_pixels"
+    //% blockId="rekabit_clear_all_rgb_pixels"
     //% block="clear all RGB pixels"
-    export function clear(): void {
+    export function clearAllRgbPixels(): void {
         for (let i = 0; i < RGB_LED_LENGTH; i++) {
             colorsArray[i] = 0;
         }
@@ -80,12 +77,13 @@ namespace rekabitRgbLed {
      * Set the brightness of the RGB pixels (0-255).
      * @param brightness Pixel brightness. eg: 25
      */
-    //% weight=19
+    //% group="RGB LED"
+    //% weight=15
     //% blockGap=40
-    //% blockId="rekabit_set_brightness"
+    //% blockId="rekabit_set_rgb_brightness"
     //% block="set RGB pixels brightness to %brightness"
     //% brightness.min=0 brightness.max=255
-    export function setBrightness(brightness: number): void {
+    export function setRgbBrightness(brightness: number): void {
         rgbLed.setBrightness(brightness);
 
         // Restore the original color.
@@ -101,12 +99,13 @@ namespace rekabitRgbLed {
      * Show the same color on all RGB pixels. 
      * @param color RGB color of the pixel.
      */
-    //% weight=17
+    //% group="RGB LED"
+    //% weight=14
     //% blockGap=8
-    //% blockId="rekabit_show_color"
+    //% blockId="rekabit_set_all_rgb_pixels_color"
     //% block="set all RGB pixels to %color"
     //% color.shadow="colorNumberPicker"
-    export function showColor(color: number): void {
+    export function setAllRgbPixelsColor(color: number): void {
         for (let i = 0; i < RGB_LED_LENGTH; i++) {
             colorsArray[i] = color;
         }
@@ -120,13 +119,14 @@ namespace rekabitRgbLed {
      * @param pixel The pixel number we want to change the color.
      * @param color RGB color of the pixel.
      */
-    //% weight=16
+    //% group="RGB LED"
+    //% weight=13
     //% blockGap=40
-    //% blockId="rekabit_set_pixel_color"
+    //% blockId="rekabit_set_rgb_pixel_color"
     //% block="set RGB pixel %pixel to %color"
     //% color.shadow="colorNumberPicker"
     //% pixel.min=0 pixel.max=1
-    export function setPixelColor(pixel: number, color: number): void {
+    export function setRgbPixelColor(pixel: number, color: number): void {
         colorsArray[pixel] = color;
         rgbLed.setPixelColor(pixel, color);
         rgbLed.show();
@@ -138,7 +138,8 @@ namespace rekabitRgbLed {
     /**
      * Return the RGB value of a known color.
     */
-    //% weight=13
+    //% group="RGB LED"
+    //% weight=12
     //% blockGap=8
     //% blockId="rekabit_colors"
     //% block="%color"
@@ -153,7 +154,8 @@ namespace rekabitRgbLed {
      * @param green Value of the green channel (0 - 255). eg: 255
      * @param blue Value of the blue channel (0 - 255). eg: 255
      */
-    //% weight=12
+    //% group="RGB LED"
+    //% weight=11
     //% blockGap=30
     //% blockId="rekabit_rgb_value"
     //% block="red %red green %green blue %blue"

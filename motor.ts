@@ -37,12 +37,7 @@ enum ServoChannel {
 
 
 
-/**
- * Blocks for REKA:BIT servos and motors driver.
- */
-//% weight=10 color=#ff8000 icon="\uf085" block="Motors & Servos"
-//% groups=['DC Motors', 'Servos']
-namespace rekabitMotors {
+namespace rekabit {
 
     /**
      * Brake the motor
@@ -159,7 +154,7 @@ namespace rekabitMotors {
      */
     //% group="Servos"
     //% weight=17
-    //% blockGap=8
+    //% blockGap=40
     //% blockId=rekabit_set_servo_position
     //% block="Set servo %servo position to %position degrees"
     //% position.min=0 position.max=180
