@@ -47,7 +47,7 @@ namespace rekabit {
     //% weight=20
     //% blockGap=8
     //% blockId=rekabit_brake_motor
-    //% block="Brake motor %motor"
+    //% block="brake motor %motor"
     export function brakeMotor(motor: MotorChannel): void {
         switch (motor) {
             case MotorChannel.M1:
@@ -80,7 +80,7 @@ namespace rekabit {
     //% weight=19
     //% blockGap=40
     //% blockId=rekabit_run_motor
-    //% block="Run motor %motor %direction at speed %speed"
+    //% block="run motor %motor %direction at speed %speed"
     //% speed.min=0 speed.max=255
     export function runMotor(motor: MotorChannel, direction: MotorDirection, speed: number): void {
         speed = rekabit.limit(speed, 0, 255);
@@ -133,7 +133,7 @@ namespace rekabit {
     //% weight=18
     //% blockGap=8
     //% blockId=rekabit_disable_servo
-    //% block="Disable servo %servo"
+    //% block="disable servo %servo"
     export function disableServo(servo: ServoChannel): void {
         if (servo == ServoChannel.All) {
             rekabit.i2cWrite(ServoChannel.S1, 0);
@@ -156,7 +156,7 @@ namespace rekabit {
     //% weight=17
     //% blockGap=40
     //% blockId=rekabit_set_servo_position
-    //% block="Set servo %servo position to %position degrees"
+    //% block="set servo %servo position to %position degrees"
     //% position.min=0 position.max=180
     export function setServoPosition(servo: ServoChannel, position: number): void {
         position = rekabit.limit(position, 0, 180);
