@@ -1,31 +1,69 @@
+# REKA:BIT Extension for Microsoft MakeCode
 
-> Open this page at [https://cytrontechnologies.github.io/pxt-rekabit/](https://cytrontechnologies.github.io/pxt-rekabit/)
+This library provides the driver for [**REKA:BIT** - Simplifying micro:bit for Robotics](https://www.cytron.io/p-reka-bit).
 
-## Use as Extension
+![REKA:BIT](https://raw.githubusercontent.com/CytronTechnologies/pxt-rekabit/master/icon.png)
 
-This repository can be added as an **extension** in MakeCode.
+### DC Motors
 
-* open [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* click on **New Project**
-* click on **Extensions** under the gearwheel menu
-* search for **https://github.com/cytrontechnologies/pxt-rekabit** and import
+Run Motor 1 forward at 50% speed when button A is pressed, brake the motor when button B is pressed.
 
-## Edit this project ![Build status badge](https://github.com/cytrontechnologies/pxt-rekabit/workflows/MakeCode/badge.svg)
+```blocks
+input.onButtonPressed(Button.A, function () {
+    edubit.runMotor(MotorChannel.M1, MotorDirection.Forward, 127)
+})
+input.onButtonPressed(Button.B, function () {
+    edubit.brakeMotor(MotorChannel.M1)
+})
+```
 
-To edit this repository in MakeCode.
+### Servos
 
-* open [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* click on **Import** then click on **Import URL**
-* paste **https://github.com/cytrontechnologies/pxt-rekabit** and click import
+Button A pressed - Rotate Servo 1 to 0 degree.
+Button B pressed - Rotate Servo 1 to 180 degrees (By setting the pulse width to 2500 us).
+Button A+B pressed - Disable Servo 1. No pulse is sent to Servo 1 and it can be rotated by hand.
 
-## Blocks preview
+```blocks
+input.onButtonPressed(Button.A, function () {
+    edubit.setServoPosition(ServoChannel.S1, 0)
+})
+input.onButtonPressed(Button.AB, function () {
+    edubit.disableServo(ServoChannel.S1)
+})
+input.onButtonPressed(Button.B, function () {
+    edubit.setServoPulseWidth(ServoChannel.S1, 2500)
+})
+```
 
-This image shows the blocks code from the last commit in master.
-This image may take a few minutes to refresh.
+## RGB LEDs
 
-![A rendered view of the blocks](https://github.com/cytrontechnologies/pxt-rekabit/raw/master/.github/makecode/blocks.png)
+Clear all RGB pixels.
 
-#### Metadata (used for search, rendering)
+```blocks
+edubit.clearAllRgbPixels()
+```
+
+Change the RGB pixels brightness to maximum.
+
+```blocks
+edubit.setRgbBrightness(255)
+```
+
+Show color green on all RGB pixels and change the color one by one to red.
+
+```blocks
+edubit.setAllRgbPixelsColor(0x00ff00)
+basic.pause(1000)
+edubit.setRgbPixelColor(0, 0xff0000)
+basic.pause(500)
+edubit.setRgbPixelColor(1, 0xff0000)
+```
+
+## License
+
+MIT
+
+## Supported targets
 
 * for PXT/microbit
-<script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
+
