@@ -1,6 +1,7 @@
 # REKA:BIT Extension for Microsoft MakeCode
 
 This library provides the driver for [**REKA:BIT** - Simplifying robotics with micro:bit](https://www.cytron.io/p-reka-bit).
+* REKA:BIT works with micro:bit V1 & V2.
 
 ![REKA:BIT](https://raw.githubusercontent.com/CytronTechnologies/pxt-rekabit/master/icon.png)
 
