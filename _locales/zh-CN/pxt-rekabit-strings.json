@@ -23,7 +23,7 @@
     "rekabit.setRgbPixelColor|block": "设置RGB彩灯像素 %pixel 颜色为 %color",
     "rekabit.colors|block": "%color",
     "rekabit.rgb|block": "红 %red 绿 %green 蓝 %blue",
-    "rekabit|block": "rekabit",
+    "rekabit|block": "REKA:BIT",
     "{id:group}DC Motors": "直流电机",
     "{id:group}Servos": "舵机",
     "{id:group}RGB LED": "RGB彩灯"
