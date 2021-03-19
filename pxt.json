@@ -1,6 +1,6 @@
 {
     "name": "pxt-rekabit",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "MakeCode Package for Cytron REKA:BIT",
     "license": "MIT",
     "dependencies": {
