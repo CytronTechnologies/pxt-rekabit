@@ -3,10 +3,10 @@
     "MotorDirection.Forward|block": "向前",
     "MotorDirection.Backward|block": "向后",
     "ServoChannel.All|block": "全选",
-    "rekabit.brakeMotor|block": "制止电机 %motor",
-    "rekabit.runMotor|block": "驱动电机 %motor %direction 于速度 %speed",
-    "rekabit.disableServo|block": "禁用舵机 %servo",
-    "rekabit.setServoPosition|block": "旋转舵机 %servo 角度至 %position 度",
+    "rekabit.brakeMotor|block": "制止直流电机 %motor",
+    "rekabit.runMotor|block": "驱动直流电机 %motor %direction 于速度 %speed",
+    "rekabit.disableServo|block": "禁用伺服电机 %servo",
+    "rekabit.setServoPosition|block": "旋转伺服电机 %servo 角度至 %position 度",
     "RgbColors.Red|block": "红色",
     "RgbColors.Orange|block": "橙色",
     "RgbColors.Yellow|block": "黄色",
@@ -25,6 +25,6 @@
     "rekabit.rgb|block": "红 %red 绿 %green 蓝 %blue",
     "rekabit|block": "REKA:BIT",
     "{id:group}DC Motors": "直流电机",
-    "{id:group}Servos": "舵机",
+    "{id:group}Servos": "伺服电机",
     "{id:group}RGB LED": "RGB彩灯"
 }
