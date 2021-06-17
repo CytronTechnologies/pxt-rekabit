@@ -1,12 +1,12 @@
 # REKA:BIT Extension for Microsoft MakeCode
 
-This library provides the driver for [**REKA:BIT** - Simplifying robotics with micro:bit](https://www.cytron.io/p-reka-bit).
+This library provides the driver for [**REKA:BIT** - Simplifying robotics with micro:bit](https://www.cytron.io/p-rekabit-simplifying-robotics-with-microbit).
 
 **REKA:BIT** aims at simplifying robots & projects making with micro:bit. With the built-in dual-channel DC motor driver, 4x servo control and dedicated power input, students can build projects with mechanical movements right away. The 6x Grove ports with LED status indicators on all its IO pins enable additional sensors and modules to be applied to any projects conveniently. REKA:BIT works with **micro:bit V1 & V2**.
 
 '**REKA**' comes from the [*Malay*](https://en.wikipedia.org/wiki/Malay_language) word 'reka bentuk' which means design. 
 
-Read more about REKA:BIT here: https://www.cytron.io/p-reka-bit
+Read more about REKA:BIT here: https://www.cytron.io/p-rekabit
 
 ![REKA:BIT](https://raw.githubusercontent.com/CytronTechnologies/pxt-rekabit/master/icon.png)
 
