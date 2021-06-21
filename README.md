@@ -27,18 +27,18 @@ input.onButtonPressed(Button.B, function () {
 ## Servos
 
 Button A pressed - Rotate Servo 1 to 0 degree.
-Button B pressed - Rotate Servo 1 to 180 degrees (By setting the pulse width to 2500 us).
+Button B pressed - Rotate Servo 1 to 180 degree.
 Button A+B pressed - Disable Servo 1. No pulse is sent to Servo 1 and it can be rotated by hand.
 
 ```blocks
 input.onButtonPressed(Button.A, function () {
     rekabit.setServoPosition(ServoChannel.S1, 0)
 })
+input.onButtonPressed(Button.B, function () {
+    rekabit.setServoPosition(ServoChannel.S1, 180)
+})
 input.onButtonPressed(Button.AB, function () {
     rekabit.disableServo(ServoChannel.S1)
-})
-input.onButtonPressed(Button.B, function () {
-    rekabit.setServoPulseWidth(ServoChannel.S1, 2500)
 })
 ```
 
