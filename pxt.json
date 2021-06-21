@@ -1,13 +1,13 @@
 {
     "name": "pxt-rekabit",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "description": "MakeCode Package for Cytron REKA:BIT",
     "license": "MIT",
     "dependencies": {
         "core": "*",
         "radio": "*",
         "microphone": "*",
-        "neopixel": "github:microsoft/pxt-neopixel#v0.6.12"
+        "neopixel": "github:microsoft/pxt-neopixel#v0.7.3"
     },
     "files": [
         "README.md",
