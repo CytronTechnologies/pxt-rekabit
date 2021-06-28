@@ -10,6 +10,8 @@ Read more about REKA:BIT here: https://www.cytron.io/p-rekabit
 
 ![REKA:BIT](https://raw.githubusercontent.com/CytronTechnologies/pxt-rekabit/master/icon.png)
 
+This is how you can add REKA:BIT extension to your MakeCode project.
+![Adding Extension](https://raw.githubusercontent.com/CytronTechnologies/pxt-rekabit/master/rekabit-adding-extension.gif)
 
 ## DC Motors
 
