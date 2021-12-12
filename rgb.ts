@@ -46,11 +46,11 @@ namespace rekabit {
     }
 
     // Create a Neo Pixel object for RGB LED.
-    let rgbLed = neopixel.create(RGB_LED_PIN, RGB_LED_LENGTH, NeoPixelMode.RGB);
-    rgbLed.clear();
+    //let rgbLed = neopixel.create(RGB_LED_PIN, RGB_LED_LENGTH, NeoPixelMode.RGB);
+    //rgbLed.clear();
 
     // Reduce the default brightness.
-    rgbLed.setBrightness(25);
+    //rgbLed.setBrightness(25);
 
 
 
@@ -67,9 +67,9 @@ namespace rekabit {
             colorsArray[i] = 0;
         }
 
-        rgbLed.clear();
-        rgbLed.show();
-        basic.pause(0);
+        //rgbLed.clear();
+        //rgbLed.show();
+        //basic.pause(0);
     }
 
 
@@ -84,13 +84,13 @@ namespace rekabit {
     //% block="set RGB pixels brightness to %brightness"
     //% brightness.min=0 brightness.max=255
     export function setRgbBrightness(brightness: number): void {
-        rgbLed.setBrightness(brightness);
+        //rgbLed.setBrightness(brightness);
 
         // Restore the original color.
         for (let i = 0; i < RGB_LED_LENGTH; i++) {
-            rgbLed.setPixelColor(i, colorsArray[i]);
+            //rgbLed.setPixelColor(i, colorsArray[i]);
         }
-        rgbLed.show();
+        //rgbLed.show();
         basic.pause(0);
     }
 
@@ -109,7 +109,7 @@ namespace rekabit {
         for (let i = 0; i < RGB_LED_LENGTH; i++) {
             colorsArray[i] = color;
         }
-        rgbLed.showColor(color);
+        //rgbLed.showColor(color);
         basic.pause(0);
     }
 
@@ -128,8 +128,8 @@ namespace rekabit {
     //% pixel.min=0 pixel.max=1
     export function setRgbPixelColor(pixel: number, color: number): void {
         colorsArray[pixel] = color;
-        rgbLed.setPixelColor(pixel, color);
-        rgbLed.show();
+        //rgbLed.setPixelColor(pixel, color);
+        //rgbLed.show();
         basic.pause(0);
     }
 
